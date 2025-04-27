@@ -5,9 +5,9 @@ use strict;
 use warnings;
 
 use Class::Utils qw(set_params);
-use Data::Bus;
-use Data::Bus::Term;
-use Data::Bus::Order;
+use Data::Bus 0.04;
+use Data::Bus::Term 0.04;
+use Data::Bus::Order 0.04;
 use Data::ExternalId;
 use Data::Person;
 use DateTime;

@@ -23,9 +23,9 @@ no_index:
     - xt
 requires:
   Class::Utils: 0.03
-  Data::Bus: 0.03
-  Data::Bus::Order: 0.03
-  Data::Bus::Term: 0.03
+  Data::Bus: 0.04
+  Data::Bus::Order: 0.04
+  Data::Bus::Term: 0.04
   Data::Const: 0
   Data::ExternalId: 0
   Data::Person: 0
