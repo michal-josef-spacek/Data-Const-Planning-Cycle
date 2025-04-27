@@ -1,5 +1,6 @@
 package Data::Const::Bus;
 
+use base qw(Data::Const);
 use strict;
 use warnings;
 

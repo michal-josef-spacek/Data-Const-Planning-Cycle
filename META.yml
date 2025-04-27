@@ -26,6 +26,7 @@ requires:
   Data::Bus: 0.03
   Data::Bus::Order: 0.03
   Data::Bus::Term: 0.03
+  Data::Const: 0
   DateTime: 0
   Unicode::UTF8: 0
   perl: 5.6.2

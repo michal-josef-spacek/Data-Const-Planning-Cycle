@@ -22,6 +22,7 @@ requires 'Class::Utils' => 0.03;
 requires 'Data::Bus' => 0.03;
 requires 'Data::Bus::Term' => 0.03;
 requires 'Data::Bus::Order' => 0.03;
+requires 'Data::Const' => 0;
 requires 'DateTime' => 0;
 requires 'Unicode::UTF8' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-Const-Bus/issues';
