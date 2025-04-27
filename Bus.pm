@@ -8,6 +8,8 @@ use Class::Utils qw(set_params);
 use Data::Bus;
 use Data::Bus::Term;
 use Data::Bus::Order;
+use Data::ExternalId;
+use Data::Person;
 use DateTime;
 use Unicode::UTF8 qw(decode_utf8);
 
@@ -60,6 +62,16 @@ sub data {
 	);
 
 	my $order = Data::Bus::Order->new(
+		'contact' => Data::Person->new(
+			'email' => 'skim@cpan.org',
+			'external_ids' => [
+				Data::ExternalId->new(
+					'key' => 'phone',
+					'value' => '+420777623160',
+				),
+			],
+			'name' => decode_utf8('Michal Josef Spacek'),
+		),
 		'date_of_order' => DateTime->new(
 			'year' => 2025,
 			'month' => 4,
@@ -78,10 +90,7 @@ sub data {
 				'second' => 45,
 			),
 		) : (),
-		'email' => 'skim@cpan.org',
 		$self->{'mode_id'} ? ('id' => 1) : (),
-		'person' => decode_utf8('Michal Josef Spacek'),
-		'phone' => '+420777623160',
 		'term' => $term,
 		'seats_count' => 4,
 	);
