@@ -10,7 +10,7 @@ use Data::Planning::Cycle::Item;
 use DateTime;
 use Mo::utils 0.06 qw(check_bool);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Constructor.
 sub new {
