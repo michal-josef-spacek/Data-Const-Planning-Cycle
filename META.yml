@@ -1,8 +1,10 @@
 ---
-abstract: 'Constant data for Data::Bus.'
+abstract: 'Constant data for Data::Planning::Cycle.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
+  English: 0
+  Error::Pure::Utils: 0
   ExtUtils::MakeMaker: 6.59
   Test::More: 0
   Test::NoWarnings: 0
@@ -15,7 +17,7 @@ license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Data-Const-Bus
+name: Data-Const-Planning-Cycle
 no_index:
   directory:
     - inc
@@ -23,18 +25,14 @@ no_index:
     - xt
 requires:
   Class::Utils: 0.03
-  Data::Bus: 0.04
-  Data::Bus::Order: 0.04
-  Data::Bus::Term: 0.04
-  Data::Const: 0
-  Data::ExternalId: 0
-  Data::Person: 0
+  Data::Planning::Cycle: 0
+  Data::Planning::Cycle::Item: 0
   DateTime: 0
-  Unicode::UTF8: 0
+  Mo::utils: 0.06
   perl: 5.6.2
 resources:
-  bugtracker: https://github.com/michal-josef-spacek/Data-Const-Bus/issues
-  homepage: https://github.com/michal-josef-spacek/Data-Const-Bus
+  bugtracker: https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle/issues
+  homepage: https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/michal-josef-spacek/Data-Const-Bus
-version: '0.02'
+  repository: git://github.com/michal-josef-spacek/Data-Const-Planning-Cycle
+version: '0.01'

@@ -7,8 +7,8 @@ use Test::NoWarnings;
 BEGIN {
 
 	# Test.
-	use_ok('Data::Const::Bus');
+	use_ok('Data::Const::Planning::Cycle');
 }
 
 # Test.
-require_ok('Data::Const::Bus');
+require_ok('Data::Const::Planning::Cycle');
