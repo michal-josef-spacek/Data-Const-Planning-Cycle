@@ -34,6 +34,18 @@ sub new {
 sub data {
 	my $self = shift;
 
+#	my ($act_day, $act_month, $act_year) = (localtime())[3 .. 5];
+#	my $act_month += 1;
+#	my $act_year += 1900;
+#	my $dt_act = DateTime->now;
+#	my $dt_spring = DateTime->new(
+#		'year' => $act_year,
+#		'month' => 3,
+#		'day' => 21,
+#	);
+#	my ($state_spring, $state_summer, $state_autumn, $state_winter) = ('new' x 4);
+#	if (DateTime->compare($dt_act, $dt_spring) == -1) {
+#	}
 	my $spring = Data::Planning::Cycle::Item->new(
 		'description' => 'Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer.',
 		# TODO Something relalistic.
