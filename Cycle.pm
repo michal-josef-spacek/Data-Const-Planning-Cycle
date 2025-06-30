@@ -35,7 +35,7 @@ sub data {
 	my $self = shift;
 
 	my $spring = Data::Planning::Cycle::Item->new(
-		'description' => '',
+		'description' => 'Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding summer.',
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
@@ -45,7 +45,7 @@ sub data {
 		'state' => 'new',
 	);
 	my $summer = Data::Planning::Cycle::Item->new(
-		'description' => '',
+		'description' => 'Summer or summertime is the hottest and brightest of the four temperate seasons, occurring after spring and before autumn.',
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
@@ -55,7 +55,7 @@ sub data {
 		'state' => 'new',
 	);
 	my $autumn = Data::Planning::Cycle::Item->new(
-		'description' => '',
+		'description' => 'Autumn, also known as fall, is one of the four temperate seasons on Earth.',
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
@@ -65,7 +65,7 @@ sub data {
 		'state' => 'new',
 	);
 	my $winter = Data::Planning::Cycle::Item->new(
-		'description' => '',
+		'description' => 'Winter is the coldest and darkest season of the year in temperate and polar climates. It occurs after autumn and before spring.',
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
