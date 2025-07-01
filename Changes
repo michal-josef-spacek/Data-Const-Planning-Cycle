@@ -2,6 +2,7 @@
  - Add Czech::Woman cycle.
  - Move Cycle code to Season.pm.
  - Rewrite Cycle to common Data::Const class.
+ - Rewrite work with ids.
 
 0.01 2025-07-01T00:44:51+02:00
  - First version.
