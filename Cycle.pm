@@ -51,7 +51,7 @@ sub data {
 		'cycle_id' => $self->{'cycle_id'},
 		'item_id' => $self->{'item_id'},
 		'output_struct' => $self->{'output_struct'},
-	)->data;	
+	)->data;
 
 	return $self->{'output_struct'};
 }
