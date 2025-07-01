@@ -23,6 +23,7 @@ requires 'Data::Planning::Cycle' => 0;
 requires 'Data::Planning::Cycle::Item' => 0;
 requires 'DateTime' => 0;
 requires 'Mo::utils::Hash' => 0;
+requires 'Unicode::UTF8' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-Const-Planning-Cycle';

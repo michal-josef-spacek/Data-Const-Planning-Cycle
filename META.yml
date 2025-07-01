@@ -29,6 +29,7 @@ requires:
   Data::Planning::Cycle::Item: 0
   DateTime: 0
   Mo::utils::Hash: 0
+  Unicode::UTF8: 0
   perl: 5.6.2
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle/issues
