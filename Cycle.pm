@@ -8,6 +8,7 @@ use Class::Utils qw(set_params);
 use Data::Const::Planning::Cycle::Czech::Woman;
 use Data::Const::Planning::Cycle::Job;
 use Data::Const::Planning::Cycle::Season;
+use Data::Const::Planning::Cycle::Year;
 use DateTime;
 use Mo::utils::Hash qw(check_hash);
 
@@ -64,6 +65,14 @@ sub data {
 	)->data;
 
 	Data::Const::Planning::Cycle::Season->new(
+		'cb_cycle_id' => $self->{'cb_cycle_id'},
+		'cb_item_id' => $self->{'cb_item_id'},
+		'cycle_id' => $self->{'cycle_id'},
+		'item_id' => $self->{'item_id'},
+		'output_struct' => $self->{'output_struct'},
+	)->data;
+
+	Data::Const::Planning::Cycle::Year->new(
 		'cb_cycle_id' => $self->{'cb_cycle_id'},
 		'cb_item_id' => $self->{'cb_item_id'},
 		'cycle_id' => $self->{'cycle_id'},
