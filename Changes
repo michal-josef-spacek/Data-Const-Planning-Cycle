@@ -1,5 +1,6 @@
 0.02
  - Move Cycle code to Season.pm.
+ - Rewrite Cycle to common Data::Const class.
 
 0.01 2025-07-01T00:44:51+02:00
  - First version.
