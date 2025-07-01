@@ -5,8 +5,9 @@ use strict;
 use warnings;
 
 use Class::Utils qw(set_params);
-use Data::Const::Planning::Cycle::Season;
 use Data::Const::Planning::Cycle::Czech::Woman;
+use Data::Const::Planning::Cycle::Job;
+use Data::Const::Planning::Cycle::Season;
 use DateTime;
 use Mo::utils::Hash qw(check_hash);
 
@@ -46,7 +47,7 @@ sub new {
 sub data {
 	my $self = shift;
 
-	Data::Const::Planning::Cycle::Season->new(
+	Data::Const::Planning::Cycle::Czech::Woman->new(
 		'cb_cycle_id' => $self->{'cb_cycle_id'},
 		'cb_item_id' => $self->{'cb_item_id'},
 		'cycle_id' => $self->{'cycle_id'},
@@ -54,7 +55,15 @@ sub data {
 		'output_struct' => $self->{'output_struct'},
 	)->data;
 
-	Data::Const::Planning::Cycle::Czech::Woman->new(
+	Data::Const::Planning::Cycle::Job->new(
+		'cb_cycle_id' => $self->{'cb_cycle_id'},
+		'cb_item_id' => $self->{'cb_item_id'},
+		'cycle_id' => $self->{'cycle_id'},
+		'item_id' => $self->{'item_id'},
+		'output_struct' => $self->{'output_struct'},
+	)->data;
+
+	Data::Const::Planning::Cycle::Season->new(
 		'cb_cycle_id' => $self->{'cb_cycle_id'},
 		'cb_item_id' => $self->{'cb_item_id'},
 		'cycle_id' => $self->{'cycle_id'},
