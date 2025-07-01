@@ -1,5 +1,6 @@
 0.02
  - Add Czech::Woman cycle.
+ - Add Job cycle.
  - Move Cycle code to Season.pm.
  - Rewrite Cycle to common Data::Const class.
  - Rewrite work with ids.

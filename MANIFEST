@@ -1,6 +1,7 @@
 Changes
 Cycle.pm
 Cycle/Czech/Woman.pm
+Cycle/Job.pm
 Cycle/Season.pm
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
@@ -21,6 +22,8 @@ README
 SIGNATURE
 t/Data-Const-Planning-Cycle-Czech-Woman/01-use.t
 t/Data-Const-Planning-Cycle-Czech-Woman/02-version.t
+t/Data-Const-Planning-Cycle-Job/01-use.t
+t/Data-Const-Planning-Cycle-Job/02-version.t
 t/Data-Const-Planning-Cycle-Season/01-use.t
 t/Data-Const-Planning-Cycle-Season/02-version.t
 t/Data-Const-Planning-Cycle-Season/03-new.t
@@ -31,6 +34,8 @@ t/Data-Const-Planning-Cycle/03-new.t
 t/Data-Const-Planning-Cycle/04-data.t
 xt/Data-Const-Planning-Cycle-Czech-Woman/01-pod_coverage.t
 xt/Data-Const-Planning-Cycle-Czech-Woman/02-pod.t
+xt/Data-Const-Planning-Cycle-Job/01-pod_coverage.t
+xt/Data-Const-Planning-Cycle-Job/02-pod.t
 xt/Data-Const-Planning-Cycle-Season/01-pod_coverage.t
 xt/Data-Const-Planning-Cycle-Season/02-pod.t
 xt/Data-Const-Planning-Cycle/01-pod_coverage.t
