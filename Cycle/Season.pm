@@ -10,7 +10,7 @@ use Data::Planning::Cycle::Item;
 use DateTime;
 use Mo::utils::Hash qw(check_hash);
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Constructor.
 sub new {

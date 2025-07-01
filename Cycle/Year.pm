@@ -13,7 +13,7 @@ use Readonly;
 
 Readonly::Array our @MONTH_NAMES => qw(January February March April May June July August September October November December);
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Constructor.
 sub new {
