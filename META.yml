@@ -28,7 +28,6 @@ requires:
   Data::Planning::Cycle: 0
   Data::Planning::Cycle::Item: 0
   DateTime: 0
-  Mo::utils: 0.06
   Mo::utils::Hash: 0
   perl: 5.6.2
 resources:

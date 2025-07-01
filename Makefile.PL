@@ -22,7 +22,6 @@ requires 'Class::Utils' => 0.03;
 requires 'Data::Planning::Cycle' => 0;
 requires 'Data::Planning::Cycle::Item' => 0;
 requires 'DateTime' => 0;
-requires 'Mo::utils' => 0.06;
 requires 'Mo::utils::Hash' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-Const-Planning-Cycle';

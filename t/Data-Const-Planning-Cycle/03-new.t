@@ -14,9 +14,9 @@ isa_ok($obj, 'Data::Const::Planning::Cycle');
 # Test.
 eval {
 	Data::Const::Planning::Cycle->new(
-		'mode_id' => 'bad',
+		'output_struct' => 'bad',
 	);
 };
-is($EVAL_ERROR, "Parameter 'mode_id' must be a bool (0/1).\n",
-	"Parameter 'mode_id' must be a bool (0/1) (bad).");
+is($EVAL_ERROR, "Parameter 'output_struct' isn't hash reference.\n",
+	"Parameter 'output_struct' isn't hash reference (bad).");
 clean();

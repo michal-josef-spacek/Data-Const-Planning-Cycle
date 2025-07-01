@@ -8,7 +8,6 @@ use Class::Utils qw(set_params);
 use Data::Planning::Cycle;
 use Data::Planning::Cycle::Item;
 use DateTime;
-use Mo::utils 0.06 qw(check_bool);
 use Mo::utils::Hash qw(check_hash);
 
 our $VERSION = 0.02;
@@ -20,17 +19,23 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
-	# Mode to present ids.
-	$self->{'mode_id'} = 1;
+	# Cycle id.
+	$self->{'cycle_id'} = 1;
+	$self->{'cb_cycle_id'} = sub {
+		return $self->{'cycle_id'}++;
+	};
+
+	# Item id.
+	$self->{'item_id'} = 1;
+	$self->{'cb_item_id'} = sub {
+		return $self->{'item_id'}++;
+	};
 
 	# Output structure.
 	$self->{'output_struct'} = {};
 
 	# Process parameters.
 	set_params($self, @params);
-
-	# Check 'mode_id'.
-	check_bool($self, 'mode_id');
 
 	# Check 'output_struct'.
 	check_hash($self, 'output_struct');
@@ -58,7 +63,7 @@ sub data {
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
-		$self->{'mode_id'} ? ('id' => 1) : (),
+		'id' => $self->{'cb_item_id'}->($self),
 		'name' => 'Spring',
 		# TODO Something relalistic.
 		'state' => 'new',
@@ -68,7 +73,7 @@ sub data {
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
-		$self->{'mode_id'} ? ('id' => 2) : (),
+		'id' => $self->{'cb_item_id'}->($self),
 		'name' => 'Summer',
 		# TODO Something relalistic.
 		'state' => 'new',
@@ -78,7 +83,7 @@ sub data {
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
-		$self->{'mode_id'} ? ('id' => 3) : (),
+		'id' => $self->{'cb_item_id'}->($self),
 		'name' => 'Autumn',
 		# TODO Something relalistic.
 		'state' => 'new',
@@ -88,7 +93,7 @@ sub data {
 		# TODO Something relalistic.
 		'dt_changed' => DateTime->now,
 		'dt_created' => DateTime->now,
-		$self->{'mode_id'} ? ('id' => 4) : (),
+		'id' => $self->{'cb_item_id'}->($self),
 		'name' => 'Winter',
 		# TODO Something relalistic.
 		'state' => 'new',
@@ -97,7 +102,7 @@ sub data {
 	my $season = Data::Planning::Cycle->new(
 		'dt_created' => DateTime->now,
 		'description' => "A season is a division of the year based on changes in weather, ecology, and the number of daylight hours in a given region. On Earth, seasons are the result of the axial parallelism of Earth's tilted orbit around the Sun",
-		$self->{'mode_id'} ? ('id' => 1) : (),
+		'id' => $self->{'cb_cycle_id'}->($self),
 		'items' => [$spring, $summer, $autumn, $winter],
 		'name' => 'Season',
 	);
