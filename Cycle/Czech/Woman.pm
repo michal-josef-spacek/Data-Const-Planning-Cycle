@@ -68,7 +68,7 @@ sub data {
 		'state' => 'new',
 	);
 
-	my $woman = Data::Planning::Cycle->new(
+	my $zena = Data::Planning::Cycle->new(
 		'dt_created' => DateTime->now,
 		'description' => decode_utf8('Cyklické fáze ženy.'),
 		'id' => $self->{'cb_cycle_id'}->($self),
@@ -79,12 +79,12 @@ sub data {
 	if (! exists $self->{'output_struct'}->{'cycles'}) {
 		$self->{'output_struct'}->{'cycles'} = [];
 	}
-	push @{$self->{'output_struct'}->{'cycles'}}, $season;
+	push @{$self->{'output_struct'}->{'cycles'}}, $zena;
 	if (! exists $self->{'output_struct'}->{'items'}) {
 		$self->{'output_struct'}->{'items'} = [];
 	}
-	push @{$self->{'output_struct'}->{'items'}}, $spring, $summer, $autumn,
-		$winter;
+	push @{$self->{'output_struct'}->{'items'}}, $panna, $matka, $carodejka,
+		$starena;
 
 	return $self->{'output_struct'};
 }
