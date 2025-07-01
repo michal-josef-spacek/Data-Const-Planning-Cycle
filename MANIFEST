@@ -1,5 +1,6 @@
 Changes
 Cycle.pm
+Cycle/Season.pm
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
@@ -17,9 +18,15 @@ MANIFEST			This list of files
 META.yml
 README
 SIGNATURE
+t/Data-Const-Planning-Cycle-Season/01-use.t
+t/Data-Const-Planning-Cycle-Season/02-version.t
+t/Data-Const-Planning-Cycle-Season/03-new.t
+t/Data-Const-Planning-Cycle-Season/04-data.t
 t/Data-Const-Planning-Cycle/01-use.t
 t/Data-Const-Planning-Cycle/02-version.t
 t/Data-Const-Planning-Cycle/03-new.t
 t/Data-Const-Planning-Cycle/04-data.t
+xt/Data-Const-Planning-Cycle-Season/01-pod_coverage.t
+xt/Data-Const-Planning-Cycle-Season/02-pod.t
 xt/Data-Const-Planning-Cycle/01-pod_coverage.t
 xt/Data-Const-Planning-Cycle/02-pod.t
